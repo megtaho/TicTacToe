@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" onMouseClicked="#test" prefHeight="261.0" prefWidth="462.0" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.tictactoe.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="lblTitre" text="Bienvenue sur le Tic Tac Toe !">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+   <Label fx:id="lblTitre1" text="Veuillez entrer le nom des joueurs :" />
+   <Label fx:id="lblTitre11" text="Joueur 1 :" />
+   <TextField fx:id="txtJoueurA">
+      <VBox.margin>
+         <Insets left="50.0" right="50.0" />
+      </VBox.margin>
+   </TextField>
+   <Label fx:id="lblTitre111" text="Joueur 2 :" />
+   <TextField fx:id="txtJoueurA1">
+      <VBox.margin>
+         <Insets left="50.0" right="50.0" />
+      </VBox.margin>
+   </TextField>
+    <Button fx:id="btnStart" onAction="#onClickStartButton" text="Nouvelle partie !" />
+</VBox>
